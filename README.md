@@ -1,27 +1,36 @@
 # twilio-python
 
-[![Build Status](https://secure.travis-ci.org/twilio/twilio-python.png?branch=master)](http://travis-ci.org/twilio/twilio-python)
+[![Build Status](https://secure.travis-ci.org/twilio/twilio-python.png?branch=main)](https://travis-ci.org/twilio/twilio-python)
 [![PyPI](https://img.shields.io/pypi/v/twilio.svg)](https://pypi.python.org/pypi/twilio)
 [![PyPI](https://img.shields.io/pypi/pyversions/twilio.svg)](https://pypi.python.org/pypi/twilio)
+[![Learn OSS Contribution in TwilioQuest](https://img.shields.io/static/v1?label=TwilioQuest&message=Learn%20to%20contribute%21&color=F22F46&labelColor=1f243c&style=flat-square&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAASFBMVEUAAAAZGRkcHBwjIyMoKCgAAABgYGBoaGiAgICMjIyzs7PJycnMzMzNzc3UoBfd3d3m5ubqrhfrMEDu7u739/f4vSb/3AD///9tbdyEAAAABXRSTlMAAAAAAMJrBrEAAAKoSURBVHgB7ZrRcuI6EESdyxXGYoNFvMD//+l2bSszRgyUYpFAsXOeiJGmj4NkuWx1Qeh+Ekl9DgEXOBwOx+Px5xyQhDykfgq4wG63MxxaR4ddIkg6Ul3g84vCIcjPBA5gmUMeXESrlukuoK33+33uID8TWeLAdOWsKpJYzwVMB7bOzYSGOciyUlXSn0/ABXTosJ1M1SbypZ4O4MbZuIDMU02PMbauhhHMHXbmebmALIiEbbbbbUrpF1gwE9kFfRNAJaP+FQEXCCTGyJ4ngDrjOFo3jEL5JdqjF/pueR4cCeCGgAtwmuRS6gDwaRiGvu+DMFwSBLTE3+jF8JyuV1okPZ+AC4hDFhCHyHQjdjPHUKFDlHSJkHQXMB3KpSwXNGJPcwwTdZiXlRN0gSp0zpWxNtM0beYE0nRH6QIbO7rawwXaBYz0j78gxjokDuv12gVeUuBD0MDi0OQCLvDaAho4juP1Q/jkAncXqIcCfd+7gAu4QLMACCLxpRsSuQh0igu0C9Svhi7weAGZg50L3IE3cai4IfkNZAC8dfdhsUD3CgKBVC9JE5ABAFzg4QL/taYPAAWrHdYcgfLaIgAXWJ7OV38n1LEF8tt2TH29E+QAoDoO5Ve/LtCQDmKM9kPbvCEBApK+IXzbcSJ0cIGF6e8gpcRhUDogWZ8JnaWjPXc/fNnBBUKRngiHgTUSivSzDRDgHZQOLvBQgf8rRt+VdBUUhwkU6VpJ+xcOwQUqZr+mR0kvBUgv6cB4+37hQAkXqE8PwGisGhJtN4xAHMzrsgvI7rccXqSvKh6jltGlrOHA3Xk1At3LC4QiPdX9/0ndHpGVvTjR4bZA1ypAKgVcwE5vx74ulwIugDt8e/X7JgfkucBMIAr26ndnB4UCLnDOqvteQsHlgX9N4A+c4cW3DXSPbwAAAABJRU5ErkJggg==)](https://twil.io/learn-open-source)
 
-A module for using the Twilio REST API and generating valid
-[TwiML](http://www.twilio.com/docs/api/twiml/ "TwiML -
-Twilio Markup Language").
+**The default branch name for this repository has been changed to `main` as of 07/27/2020.**
 
-## Recent Update
+## Documentation
 
-As of release 6.5.0, Beta and Developer Preview products are now exposed via
-the main `twilio-python` artifact. Releases of the `alpha` branch have been
-discontinued.
+The documentation for the Twilio API can be found [here][apidocs].
 
-If you were using the `alpha` release line, you should be able to switch back
-to the normal release line without issue.
+The Python library documentation can be found [here][libdocs].
 
-If you were using the normal release line, you should now see several new
-product lines that were historically hidden from you due to their Beta or
-Developer Preview status. Such products are explicitly documented as
-Beta/Developer Preview both in the Twilio docs and console, as well as through
-in-line code documentation here in the library.
+## Versions
+
+`twilio-python` uses a modified version of [Semantic Versioning](https://semver.org) for all changes. [See this document](VERSIONS.md) for details.
+
+### Migrating from 5.x
+
+Please consult the [official migration guide](https://www.twilio.com/docs/libraries/python/migration-guide) for information on upgrading your application using twilio-python 5.x to 6.x
+
+### Supported Python Versions
+
+This library supports the following Python implementations:
+
+* Python 2.7
+* Python 3.4
+* Python 3.5
+* Python 3.6
+* Python 3.7
+* Python 3.8
 
 ## Installation
 
@@ -36,18 +45,12 @@ line:
     $ curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
 
 Or, you can [download the source code
-(ZIP)](https://github.com/twilio/twilio-python/zipball/master "twilio-python
+(ZIP)](https://github.com/twilio/twilio-python/zipball/main "twilio-python
 source code") for `twilio-python`, and then run:
 
     python setup.py install
 
 You may need to run the above commands with `sudo`.
-
-### Migrate from 5.x
-Please consult the [official migration guide](https://www.twilio.com/docs/libraries/python/migration-guide) for information on upgrading your application using twilio-python 5.x to 6.x
-
-## Feedback
-Report any feedback or problems with this Release Candidate to the [Github Issues](https://github.com/twilio/twilio-python/issues) for twilio-python.
 
 ## Getting Started
 
@@ -67,7 +70,7 @@ token = "YYYYYYYYYYYYYYYYYY"
 client = Client(account, token)
 ```
 
-Alternately, a `Client` constructor without these parameters will
+Alternatively, a `Client` constructor without these parameters will
 look for `TWILIO_ACCOUNT_SID` and `TWILIO_AUTH_TOKEN` variables inside the
 current environment.
 
@@ -80,6 +83,29 @@ somewhere public.
 from twilio.rest import Client
 client = Client()
 ```
+
+### Specify Region and/or Edge
+
+To take advantage of Twilio's [Global Infrastructure](https://www.twilio.com/docs/global-infrastructure), specify the target Region and/or Edge for the client:
+
+```python
+from twilio.rest import Client
+
+client = Client(region='au1', edge='sydney')
+```
+A `Client` constructor  without these parameters will also look for `TWILIO_REGION` and `TWILIO_EDGE` variables inside the current environment.
+
+Alternatively, you may specify the edge and/or region after constructing the Twilio client:
+
+```python
+from twilio.rest import Client
+
+client = Client()
+client.region = 'au1'
+client.edge = 'sydney'
+```
+
+This will result in the `hostname` transforming from `api.twilio.com` to `api.sydney.au1.twilio.com`.
 
 ### Make a Call
 
@@ -109,11 +135,30 @@ message = client.messages.create(to="+12316851234", from_="+15555555555",
                                  body="Hello there!")
 ```
 
-### Handling a call using TwiML
+### Handling Exceptions
 
-To control phone calls, your application needs to output
-[TwiML](http://www.twilio.com/docs/api/twiml/ "TwiML - Twilio Markup
-Language"). Use `twilio.twiml.Response` to easily create such responses.
+```python
+from twilio.rest import Client
+from twilio.base.exceptions import TwilioRestException
+
+account = "ACXXXXXXXXXXXXXXXXX"
+token = "YYYYYYYYYYYYYYYYYY"
+client = Client(account, token)
+
+try:
+  message = client.messages.create(to="+12316851234", from_="+15555555555",
+                                   body="Hello there!")
+except TwilioRestException as e:
+  print(e)
+```
+
+For more descriptive exception types, please see the [Twilio documentation](https://www.twilio.com/docs/libraries/python/usage-guide#exceptions).
+
+### Generating TwiML
+
+To control phone calls, your application needs to output [TwiML][twiml].
+
+Use `twilio.twiml.Response` to easily create such responses.
 
 ```python
 from twilio.twiml.voice_response import VoiceResponse
@@ -127,3 +172,21 @@ print(str(r))
 <?xml version="1.0" encoding="utf-8"?>
 <Response><Say>Welcome to twilio!</Say></Response>
 ```
+
+### Using a Custom HTTP Client
+
+To use a custom HTTP client with this helper library, please see the [Twilio documentation](https://www.twilio.com/docs/libraries/python/custom-http-clients-python).
+
+### Docker Image
+
+The `Dockerfile` present in this repository and its respective `twilio/twilio-python` Docker image are currently used by Twilio for testing purposes only.
+
+### Getting help
+
+If you need help installing or using the library, please check the [Twilio Support Help Center](https://support.twilio.com) first, and [file a support ticket](https://twilio.com/help/contact) if you don't find an answer to your question.
+
+If you've instead found a bug in the library or would like new features added, go ahead and open issues or pull requests against this repo!
+
+[apidocs]: https://www.twilio.com/docs/api
+[twiml]: https://www.twilio.com/docs/api/twiml
+[libdocs]: https://twilio.github.io/twilio-python
